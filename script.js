@@ -84,11 +84,3 @@ window.addEventListener('mousemove', (_event) => {
     angleMeter.style.transform = `translateY(${y * 45}%)`
     angle.innerHTML = Math.floor(-y * 5) +'°'
 })
-const canvas = document.getElementById('canvas')
-const starback = new Starback(canvas, {
-    type: 'dot',
-    quantity: 100,
-    direction: 225,
-    backgroundColor: ['#0e1118', '#232b3e'],
-    randomOpacity: true,
-})
