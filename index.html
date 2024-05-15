@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FUTURISTIC SPACESHIP HUD</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Futuristic spaceship HUD / Made only with HTML / CSS / VANILLA JS">
+    <link rel="icon" type="image/png" href="icon.png" />
+    <!-- Icon made by https://www.flaticon.com/authors/smashicons -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <title>Futuristic HUD</title>
+</head>
+
+<body scroll="no">
+    <div id="container">
+        <canvas id="canvas"></canvas>
+        <div class="left-part dimension-3d">
+            <div class="multiple-bars">
+                <div class="multiple-bar">
+                    <div class="vertical-bar vertical-bar-1">
+                        <div class="inner-bar inner-bar-1"></div>
+                        <div class="inner-bar inner-bar-2"></div>
+                        <div class="inner-bar inner-bar-3"></div>
+                        <div class="inner-bar inner-bar-4"></div>
+                        <div class="inner-bar inner-bar-5"></div>
+                        <div class="inner-bar inner-bar-6"></div>
+                        <div class="inner-bar inner-bar-7"></div>
+                        <div class="inner-bar inner-bar-8"></div>
+                        <div class="inner-bar inner-bar-9"></div>
+                        <div class="inner-bar inner-bar-10"></div>
+                    </div>
+                </div>
+                <div class="multiple-bar">
+                    <div class="vertical-bar vertical-bar-2">
+                        <div class="inner-bar inner-bar-1"></div>
+                        <div class="inner-bar inner-bar-2"></div>
+                        <div class="inner-bar inner-bar-3"></div>
+                        <div class="inner-bar inner-bar-4"></div>
+                        <div class="inner-bar inner-bar-5"></div>
+                        <div class="inner-bar inner-bar-6"></div>
+                        <div class="inner-bar inner-bar-7"></div>
+                        <div class="inner-bar inner-bar-8"></div>
+                        <div class="inner-bar inner-bar-9"></div>
+                        <div class="inner-bar inner-bar-10"></div>
+                    </div>
+                </div>
+                <div class="multiple-bar">
+                    <div class="vertical-bar vertical-bar-3">
+                        <div class="inner-bar inner-bar-1"></div>
+                        <div class="inner-bar inner-bar-2"></div>
+                        <div class="inner-bar inner-bar-3"></div>
+                        <div class="inner-bar inner-bar-4"></div>
+                        <div class="inner-bar inner-bar-5"></div>
+                        <div class="inner-bar inner-bar-6"></div>
+                        <div class="inner-bar inner-bar-7"></div>
+                        <div class="inner-bar inner-bar-8"></div>
+                        <div class="inner-bar inner-bar-9"></div>
+                        <div class="inner-bar inner-bar-10"></div>
+                    </div>
+                </div>
+                <div class="multiple-bar">
+                    <div class="vertical-bar vertical-bar-4">
+                        <div class="inner-bar inner-bar-1"></div>
+                        <div class="inner-bar inner-bar-2"></div>
+                        <div class="inner-bar inner-bar-3"></div>
+                        <div class="inner-bar inner-bar-4"></div>
+                        <div class="inner-bar inner-bar-5"></div>
+                        <div class="inner-bar inner-bar-6"></div>
+                        <div class="inner-bar inner-bar-7"></div>
+                        <div class="inner-bar inner-bar-8"></div>
+                        <div class="inner-bar inner-bar-9"></div>
+                        <div class="inner-bar inner-bar-10"></div>
+                    </div>
+                </div>
+                <div class="multiple-bar">
+                    <div class="vertical-bar vertical-bar-5">
+                        <div class="inner-bar inner-bar-1"></div>
+                        <div class="inner-bar inner-bar-2"></div>
+                        <div class="inner-bar inner-bar-3"></div>
+                        <div class="inner-bar inner-bar-4"></div>
+                        <div class="inner-bar inner-bar-5"></div>
+                        <div class="inner-bar inner-bar-6"></div>
+                        <div class="inner-bar inner-bar-7"></div>
+                        <div class="inner-bar inner-bar-8"></div>
+                        <div class="inner-bar inner-bar-9"></div>
+                        <div class="inner-bar inner-bar-10"></div>
+                    </div>
+                </div>
+                <ul>
+                    <li>POWER</li>
+                    <li>REAR ENGINE</li>
+                    <li>FRONT ENGINE</li>
+                    <li>SHIELD</li>
+                    <li>WEAPONS</li>
+                </ul>
+            </div>
+            <div class="text-bubble">
+                <p>After winning the championship of Nebula Cup, a simulation driving competition, Jesse Xia joined NU with the dream of becoming a pilot for "Noah". Jesse Xia has always had a beloved girl, and that's you. You are his childhood sweetheart, and he is your knight. Jesse Xia is piloting this spaceship to his residence, where he and she have agreed to have a date at home. Please pilot the spaceship to his residence as well.</p>
+            </div>
+            <ul class="gazes">
+                <li>
+                    <div class="charge charge-1"></div>
+                    <div class="li-content">
+                        <div>OXYGEN</div>
+                        <div class="cube">
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="charge charge-2"></div>
+                    <div class="li-content">
+                        <div>RADIATION</div>
+                        <div class="cube">
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="charge charge-3"></div>
+                    <div class="li-content">
+                        <div>OZONE</div>
+                        <div class="cube">
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="charge charge-4"></div>
+                    <div class="li-content">
+                        <div>HUMIDITY</div>
+                        <div class="cube">
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="charge charge-5"></div>
+                    <div class="li-content">
+                        <div>AZOTE</div>
+                        <div class="cube">
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="gazes-information">
+            </div>
+        </div>
+        <div class="targeting dimension-3d">
+            <div class="target x-axis"></div>
+            <div class="glow"></div>
+            <div class="target y-axis">
+                <div class="target-scale target-scale-1"></div>
+                <div class="target-scale target-scale-2"></div>
+                <div class="target-scale target-scale-3"></div>
+                <div class="target-scale target-scale-4"></div>
+                <div class="target-scale target-scale-5"></div>
+                <div class="target-scale target-scale-6"></div>
+                <div class="target-scale target-scale-7"></div>
+                <div class="target-scale target-scale-8"></div>
+            </div>
+            <div class="aimer"></div>
+        </div>
+        <div class="right-part dimension-3d">
+            <ul class="pilote-info">
+                <li><span>PILOTE: THEDAMICRAZY</span></li>
+                <li><span>SIZE: 6 FT</span></li>
+                <li><span>TEAM: SECTION 501</span></li>
+                <li><span>RANK: OFFICIER</span></li>
+            </ul>
+            <div class="angle">
+                <div class="angle-meter">
+                    <div class="triangle"></div>
+                    <span>0°</span>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+
+                <div class="angle-inner-pattern">
+                    <div class="center-rect">
+                        <div class="small-rect right-top-rect"></div>
+                        <div class="small-rect right-bottom-rect"></div>
+                        <div class="small-rect left-top-rect"></div>
+                        <div class="small-rect left-bottom-rect"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/starback@2.1.1/dist/starback.global.js"></script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+  <script src="https://unpkg.com/starback@2.1.1/dist/starback.global.js"></script>
+</body>
+</html>
